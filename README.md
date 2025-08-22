@@ -1,4 +1,4 @@
-# ♟️ Escola de Xadrez – [Seu Nome/Projeto]
+# ♟️ Escola de Xadrez – [Igorchessmaster/curso de xadrez]
 
 ## 📌 Sobre o Projeto
 A proposta é ensinar xadrez de forma acessível, divertida e competitiva.  
