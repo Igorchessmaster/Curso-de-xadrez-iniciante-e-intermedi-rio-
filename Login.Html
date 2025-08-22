@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Xadrez</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">  <!-- Página Principal -->  <section class="bg-blue-700 text-white text-center p-10">
+    <h1 class="text-4xl font-bold mb-4">Escola de Xadrez</h1>
+    <p class="text-lg mb-6">Aprenda xadrez de forma divertida e participe de campeonatos exclusivos!</p>
+    <a href="login.html" class="bg-yellow-400 text-black px-6 py-3 rounded font-bold">Área do Aluno</a>
+  </section>  <section class="p-10">
+    <h2 class="text-2xl font-bold mb-4">Planos de Aula</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-bold mb-2">Plano Mensal</h3>
+        <p>4 aulas por mês (1 por semana), PDFs de exercícios.</p>
+        <p class="font-bold mt-2">R$120/mês</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-bold mb-2">Plano Trimestral</h3>
+        <p>12 aulas, PDFs exclusivos e suporte via WhatsApp.</p>
+        <p class="font-bold mt-2">R$325/trimestre</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-bold mb-2">Plano Semestral</h3>
+        <p>24 aulas, PDFs, desafios e mini campeonatos online.</p>
+        <p class="font-bold mt-2">R$575/semestre</p>
+      </div>
+    </div>
+  </section>  <section class="p-10 bg-white">
+    <h2 class="text-2xl font-bold mb-4">Inscrição</h2>
+    <form action="mailto:seuemail@gmail.com" method="post" enctype="text/plain" class="flex flex-col gap-4 max-w-md">
+      <input type="text" name="nome" placeholder="Nome completo" class="p-2 border rounded" required>
+      <input type="email" name="email" placeholder="E-mail" class="p-2 border rounded" required>
+      <input type="text" name="whatsapp" placeholder="WhatsApp" class="p-2 border rounded" required>
+      <select name="plano" class="p-2 border rounded">
+        <option value="mensal">Plano Mensal</option>
+        <option value="trimestral">Plano Trimestral</option>
+        <option value="semestral">Plano Semestral</option>
+      </select>
+      <textarea name="observacoes" placeholder="Observações" class="p-2 border rounded"></textarea>
+      <button type="submit" class="bg-blue-700 text-white p-2 rounded font-bold">Enviar Inscrição</button>
+    </form>
+  </section>  <section
