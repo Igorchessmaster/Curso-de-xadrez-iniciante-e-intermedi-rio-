@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Xadrez - Área do Aluno</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Página de Login -->
+  <section class="flex flex-col items-center justify-center h-screen">
+    <div class="bg-white p-10 rounded shadow-md w-96">
+      <h1 class="text-3xl font-bold mb-6 text-center">Login do Aluno</h1>
+      <form id="loginForm" class="flex flex-col gap-4">
+        <input type="text" id="username" placeholder="Usuário" class="p-2 border rounded" required>
+        <input type="password" id="password" placeholder="Senha" class="p-2 border rounded" required>
+        <button type="submit" class="bg-blue-700 text-white p-2 rounded font-bold">Entrar</button>
+      </form>
+      <p id="error" class="text-red-500 mt-2 hidden">Usuário ou senha incorretos!</p>
+    </div>
+  </section>
+
+  <script>
+    const loginForm = document.getElementById('loginForm');
+    loginForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+
+      // Usuário e senha fixos
+      if(user === 'aluno1' && pass === 'senha123'){
+        window.location.href = 'dashboard.html';
+      } else {
+        document.getElementById('error').classList.remove('hidden');
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+
